@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="16A294a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViewTransitionSwift3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qy7-32-U9G">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phT-ea-AhL">
+                                        <color key="backgroundColor" red="1" green="0.01026766514" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdW-jB-Zmp">
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="phT-ea-AhL" secondAttribute="trailing" id="Aee-KF-EpH"/>
+                                    <constraint firstItem="QdW-jB-Zmp" firstAttribute="width" secondItem="phT-ea-AhL" secondAttribute="width" id="Cwm-0a-jVl"/>
+                                    <constraint firstItem="QdW-jB-Zmp" firstAttribute="height" secondItem="phT-ea-AhL" secondAttribute="height" id="ESq-HX-6kU"/>
+                                    <constraint firstItem="QdW-jB-Zmp" firstAttribute="centerY" secondItem="phT-ea-AhL" secondAttribute="centerY" id="LOk-di-la4"/>
+                                    <constraint firstAttribute="bottom" secondItem="phT-ea-AhL" secondAttribute="bottom" id="Sg3-hn-T0i"/>
+                                    <constraint firstItem="phT-ea-AhL" firstAttribute="top" secondItem="Qy7-32-U9G" secondAttribute="top" id="XQq-QV-ZJZ"/>
+                                    <constraint firstItem="QdW-jB-Zmp" firstAttribute="centerX" secondItem="phT-ea-AhL" secondAttribute="centerX" id="iSt-JV-rpg"/>
+                                    <constraint firstItem="phT-ea-AhL" firstAttribute="leading" secondItem="Qy7-32-U9G" secondAttribute="leading" id="vnT-25-cvA"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mch-Oo-XqQ">
+                                <state key="normal" title="Switch View"/>
+                                <connections>
+                                    <action selector="switchView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SjN-I2-5rV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4o-lT-JGs">
+                                <state key="normal" title="Subview Transition"/>
+                                <connections>
+                                    <action selector="runSubviewTransition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="23Y-0P-w2t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFN-NI-r4c">
+                                <state key="normal" title="Choose Transition Type"/>
+                                <connections>
+                                    <action selector="chooseTransitionType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A6M-9f-ckX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mch-Oo-XqQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1YI-p1-EvW"/>
+                            <constraint firstItem="JFN-NI-r4c" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1we-px-OMd"/>
+                            <constraint firstItem="e4o-lT-JGs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6ZM-4X-s79"/>
+                            <constraint firstItem="e4o-lT-JGs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="D1q-9J-Bsp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mch-Oo-XqQ" secondAttribute="bottom" constant="20" id="GK3-dK-x69"/>
+                            <constraint firstItem="Qy7-32-U9G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="JVh-wd-jAb"/>
+                            <constraint firstItem="JFN-NI-r4c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Rfo-DC-bLc"/>
+                            <constraint firstItem="mch-Oo-XqQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YtE-l0-JZE"/>
+                            <constraint firstItem="e4o-lT-JGs" firstAttribute="top" secondItem="JFN-NI-r4c" secondAttribute="bottom" constant="8" id="dXn-NB-QaU"/>
+                            <constraint firstItem="mch-Oo-XqQ" firstAttribute="top" secondItem="e4o-lT-JGs" secondAttribute="bottom" constant="8" id="f1O-8v-cpw"/>
+                            <constraint firstItem="Qy7-32-U9G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="igw-jD-jAu"/>
+                            <constraint firstItem="Qy7-32-U9G" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="jQw-od-Wn8"/>
+                            <constraint firstItem="Qy7-32-U9G" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xzQ-nr-eCq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="Qy7-32-U9G" id="pqu-mw-R05"/>
+                        <outlet property="oneLabel" destination="phT-ea-AhL" id="bb5-X2-T1h"/>
+                        <outlet property="transitionTypeButton" destination="JFN-NI-r4c" id="CwG-t6-dUG"/>
+                        <outlet property="twoLabel" destination="QdW-jB-Zmp" id="Cl4-Hp-3Ou"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

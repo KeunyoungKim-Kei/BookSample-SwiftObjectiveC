@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIViewTransitionSwift2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uyL-uS-6nf">
+                                <rect key="frame" x="16" y="20" width="343" height="334"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLO-8Q-IaE">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="334"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Two" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6L-Qy-UFL">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="334"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="d6L-Qy-UFL" secondAttribute="bottom" id="Qv4-MY-sA8"/>
+                                    <constraint firstItem="d6L-Qy-UFL" firstAttribute="leading" secondItem="uyL-uS-6nf" secondAttribute="leading" id="pN6-aS-aY5"/>
+                                    <constraint firstAttribute="bottom" secondItem="HLO-8Q-IaE" secondAttribute="bottom" id="qtV-pJ-xYM"/>
+                                    <constraint firstItem="HLO-8Q-IaE" firstAttribute="leading" secondItem="uyL-uS-6nf" secondAttribute="leading" id="t4V-WU-kW4"/>
+                                    <constraint firstAttribute="trailing" secondItem="d6L-Qy-UFL" secondAttribute="trailing" id="tR5-7O-qaz"/>
+                                    <constraint firstAttribute="trailing" secondItem="HLO-8Q-IaE" secondAttribute="trailing" id="ts7-CY-0QB"/>
+                                    <constraint firstItem="d6L-Qy-UFL" firstAttribute="top" secondItem="uyL-uS-6nf" secondAttribute="top" id="vIa-tk-QWZ"/>
+                                    <constraint firstItem="HLO-8Q-IaE" firstAttribute="top" secondItem="uyL-uS-6nf" secondAttribute="top" id="zgc-m2-ouU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGv-z5-pza">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <state key="normal" title="View Switching"/>
+                                <connections>
+                                    <action selector="switchView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pp8-qW-xkh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tla-9b-Z9y">
+                                <rect key="frame" x="16" y="579" width="343" height="30"/>
+                                <state key="normal" title="Subview Transition"/>
+                                <connections>
+                                    <action selector="runSubviewTransition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fum-dc-un6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbE-wo-JDA">
+                                <rect key="frame" x="16" y="541" width="343" height="30"/>
+                                <state key="normal" title="Choose Transition Type"/>
+                                <connections>
+                                    <action selector="chooseTransitionType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jSZ-Vd-3cm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dbE-wo-JDA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0XR-pm-GLd"/>
+                            <constraint firstItem="HGv-z5-pza" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2r7-D3-aQA"/>
+                            <constraint firstItem="uyL-uS-6nf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="3x1-bm-b6n"/>
+                            <constraint firstItem="tla-9b-Z9y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HAN-Z5-tEJ"/>
+                            <constraint firstItem="uyL-uS-6nf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HBu-6p-ALS"/>
+                            <constraint firstItem="uyL-uS-6nf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kka-0q-FA8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HGv-z5-pza" secondAttribute="bottom" constant="20" id="OMt-HM-GGi"/>
+                            <constraint firstItem="tla-9b-Z9y" firstAttribute="top" secondItem="dbE-wo-JDA" secondAttribute="bottom" constant="8" id="UQF-Nt-bLD"/>
+                            <constraint firstItem="tla-9b-Z9y" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="a57-55-YUi"/>
+                            <constraint firstItem="HGv-z5-pza" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fkh-FP-MsF"/>
+                            <constraint firstItem="uyL-uS-6nf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pKR-Y8-eFh"/>
+                            <constraint firstItem="dbE-wo-JDA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wZ7-uG-lid"/>
+                            <constraint firstItem="HGv-z5-pza" firstAttribute="top" secondItem="tla-9b-Z9y" secondAttribute="bottom" constant="8" id="wro-Gy-8m3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="uyL-uS-6nf" id="j7Q-mi-vHS"/>
+                        <outlet property="oneLabel" destination="HLO-8Q-IaE" id="w1s-Qu-ZuH"/>
+                        <outlet property="transitionTypeButton" destination="dbE-wo-JDA" id="CXl-oP-YOg"/>
+                        <outlet property="twoLabel" destination="d6L-Qy-UFL" id="lr9-Re-DsY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="429.5"/>
+        </scene>
+    </scenes>
+</document>

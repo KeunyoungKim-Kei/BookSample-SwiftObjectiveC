@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="16A239m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViewContentModeSwift3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ClipsToBounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1k-qB-3ZY">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKW-mg-oeg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HG3-ja-2VH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v67-AZ-V8L">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="J3K-SH-MBo"/>
+                                </constraints>
+                                <state key="normal" title="Change Content Mode"/>
+                                <connections>
+                                    <action selector="changeContentModeWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6OB-Od-oiY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SampleImage" translatesAutoresizingMaskIntoConstraints="NO" id="reg-fv-sIe">
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="c1a-Lc-8i6"/>
+                                    <constraint firstAttribute="height" constant="150" id="faQ-mn-shN"/>
+                                </constraints>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Wq-x8-FQm">
+                                <connections>
+                                    <action selector="toggleClipsToBoundsWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="sWk-HT-g1M"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v67-AZ-V8L" firstAttribute="top" secondItem="N1k-qB-3ZY" secondAttribute="bottom" constant="13" id="26J-LL-4pC"/>
+                            <constraint firstItem="v67-AZ-V8L" firstAttribute="top" secondItem="1Wq-x8-FQm" secondAttribute="bottom" constant="8" id="7qh-7c-AYY"/>
+                            <constraint firstItem="v67-AZ-V8L" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CX0-P4-BXP"/>
+                            <constraint firstItem="RKW-mg-oeg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="K5Z-rx-SzM"/>
+                            <constraint firstItem="N1k-qB-3ZY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="Rds-1Y-PIw"/>
+                            <constraint firstItem="1Wq-x8-FQm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TsB-8J-Dhh"/>
+                            <constraint firstItem="v67-AZ-V8L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="W74-7M-JhQ"/>
+                            <constraint firstItem="RKW-mg-oeg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bdM-64-4zi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="v67-AZ-V8L" secondAttribute="bottom" constant="20" id="gRN-24-PVi"/>
+                            <constraint firstItem="reg-fv-sIe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gXs-jV-W62"/>
+                            <constraint firstItem="reg-fv-sIe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lFF-TP-ubv"/>
+                            <constraint firstItem="reg-fv-sIe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pQl-U5-0Lh"/>
+                            <constraint firstItem="RKW-mg-oeg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="w3E-KO-W60"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentModeLabel" destination="RKW-mg-oeg" id="h2V-wm-5IB"/>
+                        <outlet property="imageView" destination="reg-fv-sIe" id="ulC-bP-faS"/>
+                        <outlet property="toggleSwitch" destination="1Wq-x8-FQm" id="mOW-Wx-gqY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SampleImage" width="76" height="76"/>
+    </resources>
+</document>

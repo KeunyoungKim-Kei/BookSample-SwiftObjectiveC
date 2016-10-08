@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="URLScheme2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36h-oV-5Kc">
+                                <state key="normal" title="Website"/>
+                                <connections>
+                                    <action selector="openWebsite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eTu-9t-ghL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rz-gc-xV3">
+                                <state key="normal" title="Email"/>
+                                <connections>
+                                    <action selector="openEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xbj-Eg-PGs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxQ-Gp-1pz">
+                                <state key="normal" title="Phone"/>
+                                <connections>
+                                    <action selector="openPhone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1zZ-2G-sii"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eH7-uy-qd3">
+                                <state key="normal" title="SMS"/>
+                                <connections>
+                                    <action selector="openMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0j4-Mc-PzE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKp-CA-thI">
+                                <state key="normal" title="Facetime"/>
+                                <connections>
+                                    <action selector="openFaceTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJA-cM-v58"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="num-Pm-wXs">
+                                <state key="normal" title="Facetime Audio"/>
+                                <connections>
+                                    <action selector="openFaceTimeAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7x-n1-jx6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRg-iT-zMx">
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <action selector="openMap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vbq-tm-Ym9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLl-bc-HwM">
+                                <state key="normal" title="AppStore"/>
+                                <connections>
+                                    <action selector="openAppStore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fWQ-to-VXq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jLl-bc-HwM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7Ng-6C-v8C"/>
+                            <constraint firstItem="uKp-CA-thI" firstAttribute="top" secondItem="eH7-uy-qd3" secondAttribute="bottom" constant="20" id="7Qu-7V-8Qs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZxQ-Gp-1pz" secondAttribute="trailing" id="8wE-xW-eHL"/>
+                            <constraint firstItem="eH7-uy-qd3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="94a-QV-kFe"/>
+                            <constraint firstItem="36h-oV-5Kc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="AtB-Q3-vP2"/>
+                            <constraint firstItem="uKp-CA-thI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kqm-ss-Pgi"/>
+                            <constraint firstItem="num-Pm-wXs" firstAttribute="top" secondItem="uKp-CA-thI" secondAttribute="bottom" constant="20" id="OCg-xn-DLP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uKp-CA-thI" secondAttribute="trailing" id="OER-r8-Ibd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="36h-oV-5Kc" secondAttribute="trailing" id="P3I-FC-2tK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eH7-uy-qd3" secondAttribute="trailing" id="ScE-Ij-WOm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="num-Pm-wXs" secondAttribute="trailing" id="WkK-Of-aZW"/>
+                            <constraint firstItem="uRg-iT-zMx" firstAttribute="top" secondItem="num-Pm-wXs" secondAttribute="bottom" constant="20" id="ZHc-5T-cZR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jLl-bc-HwM" secondAttribute="trailing" id="a1b-HA-3pF"/>
+                            <constraint firstItem="num-Pm-wXs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bRT-5R-mJl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5rz-gc-xV3" secondAttribute="trailing" id="cKn-xG-Wx2"/>
+                            <constraint firstItem="36h-oV-5Kc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dtK-l5-dxH"/>
+                            <constraint firstItem="ZxQ-Gp-1pz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="emJ-DD-uu7"/>
+                            <constraint firstItem="uRg-iT-zMx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ij4-ZR-1LY"/>
+                            <constraint firstItem="jLl-bc-HwM" firstAttribute="top" secondItem="uRg-iT-zMx" secondAttribute="bottom" constant="20" id="k7F-jF-8pg"/>
+                            <constraint firstItem="eH7-uy-qd3" firstAttribute="top" secondItem="ZxQ-Gp-1pz" secondAttribute="bottom" constant="20" id="ltF-A2-xRM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uRg-iT-zMx" secondAttribute="trailing" id="mKQ-JM-3JN"/>
+                            <constraint firstItem="ZxQ-Gp-1pz" firstAttribute="top" secondItem="5rz-gc-xV3" secondAttribute="bottom" constant="20" id="qkm-At-QyQ"/>
+                            <constraint firstItem="5rz-gc-xV3" firstAttribute="top" secondItem="36h-oV-5Kc" secondAttribute="bottom" constant="20" id="uVW-ZX-ai7"/>
+                            <constraint firstItem="5rz-gc-xV3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="y7B-Nc-FP0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

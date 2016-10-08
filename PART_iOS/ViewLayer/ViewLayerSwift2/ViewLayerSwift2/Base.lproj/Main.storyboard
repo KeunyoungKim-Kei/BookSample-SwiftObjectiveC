@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vST-ex-Met">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="YxU-GW-FYk">
+            <objects>
+                <viewController id="vST-ex-Met" customClass="ViewController" customModule="ViewLayerSwift2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xZc-Xz-fb5"/>
+                        <viewControllerLayoutGuide type="bottom" id="N5D-ey-f8r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lbR-tj-zsy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZ7-IX-wMJ">
+                                <rect key="frame" x="127" y="28" width="160" height="160"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="8KT-RL-TTj"/>
+                                    <constraint firstAttribute="width" constant="160" id="FPL-ou-rYl"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Border Width" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2y-mE-uG1">
+                                <rect key="frame" x="20" y="336" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corner Radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PM5-T5-hJw">
+                                <rect key="frame" x="20" y="414" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="80" translatesAutoresizingMaskIntoConstraints="NO" id="oJF-8R-2Mf">
+                                <rect key="frame" x="18" y="444" width="378" height="31"/>
+                                <connections>
+                                    <action selector="changeCornerRadius:" destination="vST-ex-Met" eventType="valueChanged" id="xfq-ag-rLh"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shadow Offset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fL9-VY-YYH">
+                                <rect key="frame" x="20" y="523" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="NTN-6g-gQ1">
+                                <rect key="frame" x="18" y="554" width="378" height="31"/>
+                                <connections>
+                                    <action selector="changeShadowOffset:" destination="vST-ex-Met" eventType="valueChanged" id="IKj-PO-685"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shadow Radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOx-Xs-ohw">
+                                <rect key="frame" x="20" y="604" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="z38-4O-AvY">
+                                <rect key="frame" x="18" y="636" width="378" height="31"/>
+                                <connections>
+                                    <action selector="changeShadowRadius:" destination="vST-ex-Met" eventType="valueChanged" id="fJA-Eh-b2j"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="GSV-Zt-5m6">
+                                <rect key="frame" x="18" y="365" width="378" height="31"/>
+                                <connections>
+                                    <action selector="changeBorderWidth:" destination="vST-ex-Met" eventType="valueChanged" id="lRj-1T-hFW"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELh-9E-SAX">
+                                <rect key="frame" x="20" y="686" width="374" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="vST-ex-Met" eventType="touchUpInside" id="ZEn-2b-zcv"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ejY-T9-8iG">
+                                <rect key="frame" x="345" y="484" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleShadow:" destination="vST-ex-Met" eventType="valueChanged" id="pZ9-W3-Ncc"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toggle Shadow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zc-fe-4Ee">
+                                <rect key="frame" x="20" y="489" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GSV-Zt-5m6" firstAttribute="trailing" secondItem="lbR-tj-zsy" secondAttribute="trailingMargin" id="1td-Iy-9J0"/>
+                            <constraint firstItem="PM5-T5-hJw" firstAttribute="top" secondItem="GSV-Zt-5m6" secondAttribute="bottom" constant="19" id="2Pr-mL-J9E"/>
+                            <constraint firstItem="NTN-6g-gQ1" firstAttribute="leading" secondItem="lbR-tj-zsy" secondAttribute="leadingMargin" id="A2x-zg-DeU"/>
+                            <constraint firstItem="ejY-T9-8iG" firstAttribute="top" secondItem="oJF-8R-2Mf" secondAttribute="bottom" constant="10" id="A4X-IA-6hX"/>
+                            <constraint firstItem="iOx-Xs-ohw" firstAttribute="top" secondItem="NTN-6g-gQ1" secondAttribute="bottom" constant="20" id="AH0-Lh-jTc"/>
+                            <constraint firstItem="fL9-VY-YYH" firstAttribute="top" secondItem="8zc-fe-4Ee" secondAttribute="bottom" constant="13" id="DD2-wX-Din"/>
+                            <constraint firstItem="ELh-9E-SAX" firstAttribute="trailing" secondItem="lbR-tj-zsy" secondAttribute="trailingMargin" id="JLr-HS-5gb"/>
+                            <constraint firstItem="iOx-Xs-ohw" firstAttribute="trailing" secondItem="lbR-tj-zsy" secondAttribute="trailingMargin" id="JO7-1i-koO"/>
+                            <constraint firstItem="oJF-8R-2Mf" firstAttribute="top" secondItem="PM5-T5-hJw" secondAttribute="bottom" constant="9" id="KUT-30-FGY"/>
+                            <constraint firstItem="fL9-VY-YYH" firstAttribute="top" secondItem="ejY-T9-8iG" secondAttribute="bottom" constant="8" id="LZz-sz-jdy"/>
+                            <constraint firstItem="PM5-T5-hJw" firstAttribute="trailing" secondItem="lbR-tj-zsy" secondAttribute="trailingMargin" id="M8w-QB-HpC"/>
+                            <constraint firstItem="X2y-mE-uG1" firstAttribute="leading" secondItem="lbR-tj-zsy" secondAttribute="leadingMargin" id="Mpp-yl-t3h"/>
+                            <constraint firstItem="z38-4O-AvY" firstAttribute="trailing" secondItem="lbR-tj-zsy" secondAttribute="trailingMargin" id="Ni0-nt-zm4"/>
+                            <constraint firstItem="oJF-8R-2Mf" firstAttribute="trailing" secondItem="lbR-tj-zsy" secondAttribute="trailingMargin" id="OGf-am-3de"/>
+                            <constraint firstItem="N5D-ey-f8r" firstAttribute="top" secondItem="ELh-9E-SAX" secondAttribute="bottom" constant="20" id="QmH-b5-R0I"/>
+                            <constraint firstItem="8zc-fe-4Ee" firstAttribute="leading" secondItem="lbR-tj-zsy" secondAttribute="leadingMargin" id="SxG-oG-YY5"/>
+                            <constraint firstItem="ejY-T9-8iG" firstAttribute="trailing" secondItem="lbR-tj-zsy" secondAttribute="trailingMargin" id="WoC-fi-QjO"/>
+                            <constraint firstItem="fL9-VY-YYH" firstAttribute="leading" secondItem="lbR-tj-zsy" secondAttribute="leadingMargin" id="XRO-UD-xhf"/>
+                            <constraint firstItem="z38-4O-AvY" firstAttribute="top" secondItem="iOx-Xs-ohw" secondAttribute="bottom" constant="11" id="bFJ-Rp-Gus"/>
+                            <constraint firstItem="eZ7-IX-wMJ" firstAttribute="centerX" secondItem="lbR-tj-zsy" secondAttribute="centerX" id="ddP-gZ-VAL"/>
+                            <constraint firstItem="ELh-9E-SAX" firstAttribute="leading" secondItem="lbR-tj-zsy" secondAttribute="leadingMargin" id="h0V-G2-UbI"/>
+                            <constraint firstItem="GSV-Zt-5m6" firstAttribute="top" secondItem="X2y-mE-uG1" secondAttribute="bottom" constant="8" id="j89-N4-46v"/>
+                            <constraint firstItem="NTN-6g-gQ1" firstAttribute="top" secondItem="fL9-VY-YYH" secondAttribute="bottom" constant="10" id="kYJ-DA-aOF"/>
+                            <constraint firstItem="fL9-VY-YYH" firstAttribute="trailing" secondItem="lbR-tj-zsy" secondAttribute="trailingMargin" id="kdM-f6-x9j"/>
+                            <constraint firstItem="X2y-mE-uG1" firstAttribute="trailing" secondItem="lbR-tj-zsy" secondAttribute="trailingMargin" id="lyn-oX-gYk"/>
+                            <constraint firstItem="ELh-9E-SAX" firstAttribute="top" secondItem="z38-4O-AvY" secondAttribute="bottom" constant="20" id="mMf-Ij-bRO"/>
+                            <constraint firstItem="GSV-Zt-5m6" firstAttribute="leading" secondItem="lbR-tj-zsy" secondAttribute="leadingMargin" id="nLD-eh-kRy"/>
+                            <constraint firstItem="z38-4O-AvY" firstAttribute="leading" secondItem="lbR-tj-zsy" secondAttribute="leadingMargin" id="tMC-QB-4VD"/>
+                            <constraint firstItem="NTN-6g-gQ1" firstAttribute="trailing" secondItem="lbR-tj-zsy" secondAttribute="trailingMargin" id="te7-Mn-nkg"/>
+                            <constraint firstItem="oJF-8R-2Mf" firstAttribute="leading" secondItem="lbR-tj-zsy" secondAttribute="leadingMargin" id="xdN-Hc-nn0"/>
+                            <constraint firstItem="PM5-T5-hJw" firstAttribute="leading" secondItem="lbR-tj-zsy" secondAttribute="leadingMargin" id="yFd-Rf-cLY"/>
+                            <constraint firstItem="eZ7-IX-wMJ" firstAttribute="top" secondItem="xZc-Xz-fb5" secondAttribute="bottom" constant="8" id="ymh-EJ-JL8"/>
+                            <constraint firstItem="iOx-Xs-ohw" firstAttribute="leading" secondItem="lbR-tj-zsy" secondAttribute="leadingMargin" id="z3B-Uy-Iab"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="borderWidthSlider" destination="GSV-Zt-5m6" id="CSp-8o-1GS"/>
+                        <outlet property="cornerRadiusSlider" destination="oJF-8R-2Mf" id="io1-xI-50G"/>
+                        <outlet property="shadowOffsetSlider" destination="NTN-6g-gQ1" id="SiT-fa-jdX"/>
+                        <outlet property="shadowRadiusSlider" destination="z38-4O-AvY" id="SWG-pn-fL7"/>
+                        <outlet property="shadowToggleSwitch" destination="ejY-T9-8iG" id="UsQ-WP-3ec"/>
+                        <outlet property="targetView" destination="eZ7-IX-wMJ" id="JF7-zL-7aG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZOu-hi-joH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="429"/>
+        </scene>
+    </scenes>
+</document>

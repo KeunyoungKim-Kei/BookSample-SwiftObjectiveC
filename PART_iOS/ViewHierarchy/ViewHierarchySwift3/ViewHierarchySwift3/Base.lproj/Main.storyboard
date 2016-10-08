@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="16A239m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViewHierarchySwift3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6no-9s-R3K">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QDR-3R-92Q"/>
+                                </constraints>
+                                <state key="normal" title="Add Green View to Blue View"/>
+                                <connections>
+                                    <action selector="addGreenViewToBlueViewWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7WW-Y5-An5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyD-ls-i9Q">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bP0-dZ-t6e"/>
+                                </constraints>
+                                <state key="normal" title="Add Green View below Red View"/>
+                                <connections>
+                                    <action selector="addGreenViewBelowRedViewWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mDM-3N-5JW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmp-lf-XxJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yld-X0-ack"/>
+                                </constraints>
+                                <state key="normal" title="Toggle ClipsToBounds"/>
+                                <connections>
+                                    <action selector="toggleClipsToBoundsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Of6-SR-1K3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hml-fd-d87">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fbD-a9-IPR"/>
+                                </constraints>
+                                <state key="normal" title="Add Green View above Red View"/>
+                                <connections>
+                                    <action selector="addGreenViewAboveRedViewWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dg1-ue-ZEz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6I-58-F8c">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kE3-rt-9eK"/>
+                                </constraints>
+                                <state key="normal" title="Bring Green View to Front"/>
+                                <connections>
+                                    <action selector="bringGreenViewToFrontWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ere-FC-IkT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRE-Xc-Xyc">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ESZ-3z-tQW"/>
+                                </constraints>
+                                <state key="normal" title="Send Green View to Back"/>
+                                <connections>
+                                    <action selector="sendGreenViewToBackWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="POd-yq-dla"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQO-e2-xMb">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7kb-gW-lUg"/>
+                                </constraints>
+                                <state key="normal" title="Add Green View"/>
+                                <connections>
+                                    <action selector="addGreenViewWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l4K-iK-NG5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0H2-GH-nKa">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8Mi-91-SFq"/>
+                                </constraints>
+                                <state key="normal" title="Remove Green View"/>
+                                <connections>
+                                    <action selector="removeGreenViewWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0hH-gc-QxL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCU-p0-baW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZMq-LL-8zr"/>
+                                </constraints>
+                                <state key="normal" title="Add Green View to VC's Root View"/>
+                                <connections>
+                                    <action selector="addGreenViewToRootViewWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nDn-Tt-iAs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMJ-AW-OyK">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CCK-T0-5de"/>
+                                </constraints>
+                                <state key="normal" title="Exchange Red View with Green View"/>
+                                <connections>
+                                    <action selector="exchangeRedViewWithGreenViewWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PLH-B6-rlL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6no-9s-R3K" firstAttribute="top" secondItem="CMJ-AW-OyK" secondAttribute="bottom" constant="8" id="1FX-Rg-5k0"/>
+                            <constraint firstItem="sQO-e2-xMb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4XG-dD-3kG"/>
+                            <constraint firstItem="bCU-p0-baW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BYL-lz-KuP"/>
+                            <constraint firstItem="IyD-ls-i9Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Cu0-LH-bBb"/>
+                            <constraint firstItem="0H2-GH-nKa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Dby-Kt-BCC"/>
+                            <constraint firstItem="v6I-58-F8c" firstAttribute="top" secondItem="IyD-ls-i9Q" secondAttribute="bottom" constant="8" id="MNC-fY-4Ca"/>
+                            <constraint firstItem="CMJ-AW-OyK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QP7-sJ-Iyf"/>
+                            <constraint firstItem="pmp-lf-XxJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QV7-qe-OTn"/>
+                            <constraint firstItem="bCU-p0-baW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RhZ-eW-xDR"/>
+                            <constraint firstItem="IyD-ls-i9Q" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SoU-54-I4s"/>
+                            <constraint firstItem="6no-9s-R3K" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SsM-h5-l78"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bCU-p0-baW" secondAttribute="bottom" constant="20" id="Uy2-1K-afS"/>
+                            <constraint firstItem="Hml-fd-d87" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VKV-2A-ieh"/>
+                            <constraint firstItem="pmp-lf-XxJ" firstAttribute="top" secondItem="6no-9s-R3K" secondAttribute="bottom" constant="8" id="VaR-8G-jWt"/>
+                            <constraint firstItem="sQO-e2-xMb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aIf-sN-WSz"/>
+                            <constraint firstItem="Hml-fd-d87" firstAttribute="top" secondItem="0H2-GH-nKa" secondAttribute="bottom" constant="8" id="auU-Dw-qkv"/>
+                            <constraint firstItem="pmp-lf-XxJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bJF-ym-VJL"/>
+                            <constraint firstItem="0H2-GH-nKa" firstAttribute="top" secondItem="sQO-e2-xMb" secondAttribute="bottom" constant="8" id="cIC-1U-sWd"/>
+                            <constraint firstItem="CMJ-AW-OyK" firstAttribute="top" secondItem="aRE-Xc-Xyc" secondAttribute="bottom" constant="8" id="evw-8Z-CIp"/>
+                            <constraint firstItem="IyD-ls-i9Q" firstAttribute="top" secondItem="Hml-fd-d87" secondAttribute="bottom" constant="8" id="h9X-cg-2A5"/>
+                            <constraint firstItem="bCU-p0-baW" firstAttribute="top" secondItem="pmp-lf-XxJ" secondAttribute="bottom" constant="8" id="hUs-Ns-PkI"/>
+                            <constraint firstItem="v6I-58-F8c" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="igb-6h-f1r"/>
+                            <constraint firstItem="aRE-Xc-Xyc" firstAttribute="top" secondItem="v6I-58-F8c" secondAttribute="bottom" constant="8" id="klV-eu-6NT"/>
+                            <constraint firstItem="0H2-GH-nKa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ktS-X9-a4N"/>
+                            <constraint firstItem="CMJ-AW-OyK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lwI-C3-10E"/>
+                            <constraint firstItem="aRE-Xc-Xyc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="omA-nR-UJ5"/>
+                            <constraint firstItem="v6I-58-F8c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sh5-Rr-0m2"/>
+                            <constraint firstItem="6no-9s-R3K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vpR-av-kPW"/>
+                            <constraint firstItem="aRE-Xc-Xyc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zSP-vv-53K"/>
+                            <constraint firstItem="Hml-fd-d87" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zcq-1a-4Xv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

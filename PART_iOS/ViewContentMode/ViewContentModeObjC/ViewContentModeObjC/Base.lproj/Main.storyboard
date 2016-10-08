@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="16A239m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="SampleImage" translatesAutoresizingMaskIntoConstraints="NO" id="Ntr-Gq-LjY">
+                                <frame key="frameInset" minX="20" minY="293" width="374" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="y7S-4G-keq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKO-Sx-0vV">
+                                <frame key="frameInset" minX="20" minY="674" width="374" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="yyJ-c5-fIZ"/>
+                                </constraints>
+                                <state key="normal" title="Change Content Mode"/>
+                                <connections>
+                                    <action selector="changeContentMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oXX-wX-eK6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwW-jK-Ucp">
+                                <frame key="frameInset" minX="20" minY="28" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cnI-Q9-aTz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5w-wi-ggt">
+                                <frame key="frameInset" minX="345" minY="635" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleClipsToBounds:" destination="BYZ-38-t0r" eventType="valueChanged" id="mpl-Uw-8e7"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ClipsToBounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXc-g5-mOf">
+                                <frame key="frameInset" minX="20" minY="640" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ntr-Gq-LjY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3rh-Wh-SmD"/>
+                            <constraint firstItem="Ntr-Gq-LjY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Kog-Qb-CtY"/>
+                            <constraint firstItem="xwW-jK-Ucp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WHN-ED-3gP"/>
+                            <constraint firstItem="gKO-Sx-0vV" firstAttribute="top" secondItem="f5w-wi-ggt" secondAttribute="bottom" constant="8" id="XeQ-gI-042"/>
+                            <constraint firstItem="Ntr-Gq-LjY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aWA-Wt-SMA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gKO-Sx-0vV" secondAttribute="bottom" constant="20" id="hl2-B3-hvY"/>
+                            <constraint firstItem="xwW-jK-Ucp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="myG-DF-xQp"/>
+                            <constraint firstItem="xwW-jK-Ucp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uO5-AK-bGP"/>
+                            <constraint firstItem="gKO-Sx-0vV" firstAttribute="top" secondItem="RXc-g5-mOf" secondAttribute="bottom" constant="13" id="uxg-8i-NIT"/>
+                            <constraint firstItem="RXc-g5-mOf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vgm-Ad-H0a"/>
+                            <constraint firstItem="gKO-Sx-0vV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vmH-4s-g34"/>
+                            <constraint firstItem="gKO-Sx-0vV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="x8W-0U-A49"/>
+                            <constraint firstItem="f5w-wi-ggt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zqg-NI-tlb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentModeLabel" destination="xwW-jK-Ucp" id="WhU-tO-skd"/>
+                        <outlet property="imageView" destination="Ntr-Gq-LjY" id="GFI-kR-BNM"/>
+                        <outlet property="toggleSwitch" destination="f5w-wi-ggt" id="aFo-3a-QNk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296" y="458"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SampleImage" width="76" height="76"/>
+    </resources>
+</document>

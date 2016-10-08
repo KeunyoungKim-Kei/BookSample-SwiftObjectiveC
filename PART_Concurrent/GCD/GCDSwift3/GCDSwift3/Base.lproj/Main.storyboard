@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GCDSwift3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sa5-hk-4gt">
+                                <state key="normal" title="Submit Task Synchronously to Serial Queue"/>
+                                <connections>
+                                    <action selector="submitTaskSynchronouslyToSerialQueue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zwy-RV-mvY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSj-1p-ydD">
+                                <state key="normal" title="Submit Task Synchronously to Concurrent Queue"/>
+                                <connections>
+                                    <action selector="submitTaskSynchronouslyToConcurrentQueue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ue7-EY-b70"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhH-Y1-OOD">
+                                <state key="normal" title="Submit Task Asynchronously to Serial Queue"/>
+                                <connections>
+                                    <action selector="submitTaskAsynchronouslyToSerialQueue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAW-sC-xXw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owi-0c-k6d">
+                                <state key="normal" title="Submit Task Asynchronously to Concurrent Queue"/>
+                                <connections>
+                                    <action selector="submitTaskAsynchronouslyToConcurrentQueue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z3d-Vo-zHS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUt-G0-ZwX">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp2-B8-qsb">
+                                <state key="normal" title="Run Background Task And Update UI"/>
+                                <connections>
+                                    <action selector="runBackgroundTaskAndUpdateUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hle-M1-szn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pj0-uf-Zlv">
+                                <state key="normal" title="Run Task Group and Wait"/>
+                                <connections>
+                                    <action selector="runTaskGroupAndWait:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wxk-CO-rYh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veq-hV-GhP">
+                                <state key="normal" title="Run Task Group and Notify"/>
+                                <connections>
+                                    <action selector="runTaskGroupAndNotify:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Idb-Rx-4fq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbQ-Vg-pbX">
+                                <state key="normal" title="Dispatch Semaphore"/>
+                                <connections>
+                                    <action selector="synchronizeWithSemaphore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tbl-0D-ahT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcC-Rh-Zff">
+                                <state key="normal" title="Concurrent Loop"/>
+                                <connections>
+                                    <action selector="runConcurrentLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dC0-Md-1Xu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="MhH-Y1-OOD" secondAttribute="trailing" id="1RU-eQ-8Fi"/>
+                            <constraint firstItem="bp2-B8-qsb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="56u-3e-3dg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bp2-B8-qsb" secondAttribute="trailing" id="C0l-Xz-eee"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OSj-1p-ydD" secondAttribute="trailing" id="EbE-la-hew"/>
+                            <constraint firstItem="fbQ-Vg-pbX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kj9-NQ-xLf"/>
+                            <constraint firstItem="OSj-1p-ydD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kt0-jq-fz5"/>
+                            <constraint firstItem="veq-hV-GhP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LLv-Ol-v8v"/>
+                            <constraint firstItem="Owi-0c-k6d" firstAttribute="top" secondItem="MhH-Y1-OOD" secondAttribute="bottom" constant="20" id="LiL-DG-O3B"/>
+                            <constraint firstItem="OSj-1p-ydD" firstAttribute="top" secondItem="sa5-hk-4gt" secondAttribute="bottom" constant="20" id="LvD-8l-cOa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sa5-hk-4gt" secondAttribute="trailing" id="Paw-Xn-SLg"/>
+                            <constraint firstItem="MhH-Y1-OOD" firstAttribute="top" secondItem="OSj-1p-ydD" secondAttribute="bottom" constant="20" id="U51-Ii-xtc"/>
+                            <constraint firstItem="sa5-hk-4gt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UjH-Sj-IUa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jcC-Rh-Zff" secondAttribute="trailing" id="Vhk-1e-g1L"/>
+                            <constraint firstItem="veq-hV-GhP" firstAttribute="top" secondItem="Pj0-uf-Zlv" secondAttribute="bottom" constant="20" id="WSw-kU-ttY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pj0-uf-Zlv" secondAttribute="trailing" id="X6z-fP-Llg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="veq-hV-GhP" secondAttribute="trailing" id="Zbk-aW-qLc"/>
+                            <constraint firstItem="Pj0-uf-Zlv" firstAttribute="top" secondItem="bp2-B8-qsb" secondAttribute="bottom" constant="30" id="bO7-nJ-FQ6"/>
+                            <constraint firstItem="Pj0-uf-Zlv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cKs-9x-8RE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fbQ-Vg-pbX" secondAttribute="trailing" id="dfB-Pr-dQ1"/>
+                            <constraint firstItem="Owi-0c-k6d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gcV-5p-B7X"/>
+                            <constraint firstItem="jcC-Rh-Zff" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ikV-sJ-hVd"/>
+                            <constraint firstItem="fbQ-Vg-pbX" firstAttribute="top" secondItem="veq-hV-GhP" secondAttribute="bottom" constant="30" id="jaV-Il-nab"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Owi-0c-k6d" secondAttribute="trailing" id="kpJ-RN-fhS"/>
+                            <constraint firstItem="MhH-Y1-OOD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lKp-aX-3oH"/>
+                            <constraint firstItem="sa5-hk-4gt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nlS-tC-AlM"/>
+                            <constraint firstItem="jcC-Rh-Zff" firstAttribute="top" secondItem="fbQ-Vg-pbX" secondAttribute="bottom" constant="20" id="rzH-Rq-mGF"/>
+                            <constraint firstItem="ZUt-G0-ZwX" firstAttribute="top" secondItem="Owi-0c-k6d" secondAttribute="bottom" constant="30" id="vo9-MP-wQW"/>
+                            <constraint firstItem="ZUt-G0-ZwX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wSG-Bs-7OZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZUt-G0-ZwX" secondAttribute="trailing" id="wc1-AM-FOX"/>
+                            <constraint firstItem="bp2-B8-qsb" firstAttribute="top" secondItem="ZUt-G0-ZwX" secondAttribute="bottom" constant="20" id="zL1-Mk-uhe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="ZUt-G0-ZwX" id="ZAq-mU-sEf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
